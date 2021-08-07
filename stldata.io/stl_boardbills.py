@@ -21,6 +21,3 @@ analysis_1_df.pop('Ordinance')
 analysis_1_df.groupby(['Session','Ward']).sum()
 
 print(analysis_1_df)
-
-
-
