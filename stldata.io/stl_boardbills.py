@@ -36,13 +36,19 @@ class data_analysis():
         self.bills_per_ward_df = self.df[['Session','Ward','Passed','Board Bill']].groupby(['Passed','Ward','Session'],0).count().reset_index().copy()
         self.bills_per_alderman_df = self.df[['Session','Alderman','Passed','Board Bill']].groupby(['Passed','Alderman','Session'],0).count().reset_index().copy()
         self._groupby_example = self.df[['Passed', 'Board Bill']].groupby(['Passed']).count().copy().at[False,'Board Bill']
+        #TODO create a function to create df's and plots for each 
         self._2015_bb_passed = self.bills_per_ward_df.query('Passed == True & Session == "2015-2016"').get(['Ward','Board Bill']).copy()
         #self._2015_bb_passed_chart = self._2015_bb_passed.plot(x='Ward', y='Board Bill',kind='Bar')
-        
+
         print('Data Analysis Complete')
 
 class presentation():
-    def __init__(self) -> None: #todo
+    import shapefile
+    from shapely.geometry import mapping, shape
+    """dfogd"""
+    def __init__(self) -> None: #TODO
+        self.filepath = r'C:\Users\legis\Documents\nbrhds_wards\WARDS_2010'
+
         pass
     
 clean_bb_data(boardbill_df)
