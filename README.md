@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to my local politics data experiments!
 
 This repository contains the python code and jupyter notebooks for a personal effort to analyse board bills passed by the St Louis City Board of Alderman.
 
