@@ -31,7 +31,7 @@ with zipfile.ZipFile(zip_file, 'r') as zip_ref:
 # Read each CSV file and merge them into one DataFrame
 
 # Filter CSV files based on the year in their filenames (e.g., files from 2021 onwards)
-csv_files = [f for f in os.listdir('csb_data') if f.endswith('.csv') and int(f[:4]) > 2020]
+csv_files = [f for f in os.listdir('csb_data') if f.endswith('.csv') and int(f[:4]) > 2021]
 merged_df_list = []
 for csv_file in csv_files:
     print(f"Merging file: {csv_file}")
