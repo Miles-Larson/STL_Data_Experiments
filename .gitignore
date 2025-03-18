@@ -1,3 +1,4 @@
 *.csv
 *.zip
+*.parquet
 csb_data/README.txt
