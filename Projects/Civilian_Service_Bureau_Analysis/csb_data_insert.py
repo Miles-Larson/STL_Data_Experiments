@@ -10,7 +10,7 @@ table_id = 'csb'
 table_ref = client.dataset(dataset_id).table(table_id)
 
 # Load the CSV data into a DataFrame
-csv_file_path = 'csb_data\merged_csb_data.csv'
+csv_file_path = 'landing_zone\merged_csb_data.csv'
 df = pd.read_csv(csv_file_path)
 
 # Convert DataFrame to BigQuery table
