@@ -2,3 +2,8 @@
 *.zip
 *.parquet
 csb_data/README.txt
+secret_api.py
+*.secrets
+*.pyc
+*.mid
+*.csv
